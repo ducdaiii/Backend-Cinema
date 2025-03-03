@@ -1,0 +1,18 @@
+﻿# Thư mục hệ thống của Visual Studio
+.vs/
+
+# File cấu hình người dùng Visual Studio
+*.user
+*.suo
+
+# Thư mục build của .NET
+bin/
+obj/
+
+# File cấu hình (cẩn thận khi commit)
+appsettings.json
+appsettings.Development.json
+
+# File log, temp
+logs/
+*.log

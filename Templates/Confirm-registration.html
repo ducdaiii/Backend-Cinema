@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận tài khoản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .code-box {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 2px dashed #007bff;
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Hỗ trợ Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #222 !important;
+            }
+
+            .container {
+                background-color: #333 !important;
+                color: #fff !important;
+            }
+
+            h2 {
+                color: #fff !important;
+            }
+
+            p {
+                color: #ccc !important;
+            }
+
+            .code-box {
+                background-color: #444 !important;
+                border-color: #0084ff !important;
+                color: #fff !important;
+            }
+
+            .btn {
+                background-color: #0084ff !important;
+            }
+
+                .btn:hover {
+                    background-color: #0064d3 !important;
+                }
+
+            .footer {
+                color: #bbb !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎬 Chào mừng thành viên mới của CinemaHD!</h2>
+        <p>Xin chào <b>{UserName}</b>,</p>
+        <p>Cảm ơn bạn đã đăng ký tài khoản. Vui lòng xác nhận địa chỉ email của bạn để chúng tôi biết bạn là chủ sở hữu hợp pháp của tài khoản này.</p>
+        <p>Mã xác nhận của bạn:</p>
+        <div class="code-box">{CodeRe}</div>
+        <p>Vui lòng không chia sẻ mã này với bất kỳ ai.</p>
+        <p>Nếu bạn không thực hiện yêu cầu này, vui lòng bỏ qua email này.</p>
+        <p class="footer">© 2025 CinemaHD | Mọi quyền được bảo lưu.</p>
+    </div>
+</body>
+</html>

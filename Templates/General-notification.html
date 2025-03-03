@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Suất chiếu mới đã có mặt! 🔥</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .poster {
+            width: 100%;
+            height: 60%;
+        }
+
+        .content {
+            padding: 20px;
+            align-content: center;
+        }
+
+        .trailer {
+            text-align: center
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            align-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background: #ff9900;
+            }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #ddd;
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+            }
+
+            .container {
+                background: #111;
+                box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+            }
+
+            .btn {
+                background: #ffcc00;
+            }
+
+                .btn:hover {
+                    background: #ff9900;
+                }
+
+            .footer {
+                color: #bbb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="content">
+            <h2>🎬 {MovieName} 🎬</h2>
+            <p>Xin chào <b>{User}</b>,</p>
+            <p>Bộ phim <strong>{MovieName}</strong> đã có suất chiếu mới tại rạp của chúng tôi. Đừng bỏ lỡ!</p>
+            <img src="{MoviePosterUrl}" alt="Poster {MovieName}" class="poster">
+            <p>Bạn hãy xem thử trailer nhé @@</p>
+            <div class="trailer"><a href="{Trailer}" class="btn">🎬 Xem trước trailer phim!</a></div>
+            <p class="footer">© 2025 CinemaHD | Mọi quyền được bảo lưu.</p>
+        </div>
+    </div>
+</body>
+</html>
