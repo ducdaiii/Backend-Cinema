@@ -11,6 +11,7 @@ namespace CinemaHD.Models.Domains
         public string AtRow { get; set; }
         public int AtColumn { get; set; }
         public bool IsBooked { get; set; } = false;
+        public bool IsActive { get; set; } = true;
 
         [ForeignKey("CinemaID")]
         public Cinemas Cinema { get; set; }

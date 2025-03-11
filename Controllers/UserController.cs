@@ -27,7 +27,6 @@ namespace CinemaHD.Controllers
             return Ok(users);
         }
 
-        [Authorize(Roles = "Admin")]
         [HttpGet]
         [Route("get/{userId}")]
         public async Task<IActionResult> GetUser(string userId)

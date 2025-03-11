@@ -6,7 +6,8 @@ namespace CinemaHD.Models.Domains
     {
         [Key]
         public int LocationID { get; set; }
-        public string NameLocation { get; set; }
-        public string AddressBe { get; set; }
+        public string NameLocation { get; set; } = string.Empty;
+        public string AddressBe { get; set; } = string.Empty;
+        public bool IsActive { get; set; } = false;
     }
 }

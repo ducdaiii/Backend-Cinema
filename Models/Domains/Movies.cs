@@ -5,7 +5,7 @@ namespace CinemaHD.Models.Domains
     public class Movies
     {
         [Key]
-        public string MovieID { get; set; }
+        public string MovieID { get; set; } 
         public string Title { get; set; }
         public string Director { get; set; }
         public string Poster { get; set; }

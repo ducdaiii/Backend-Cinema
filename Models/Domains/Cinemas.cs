@@ -7,10 +7,11 @@ namespace CinemaHD.Models.Domains
     {
         [Key]
         public int CinemaID { get; set; }
-        public string NameCinema { get; set; }
+        public string NameCinema { get; set; } = string.Empty;
         public int LocationID { get; set; }
+        public bool IsActive { get; set; } = false;
 
         [ForeignKey("LocationID")]
-        public Locations Location { get; set; }
+        public Locations Location { get; set; } = new Locations();
     }
 }

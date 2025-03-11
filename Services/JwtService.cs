@@ -22,12 +22,12 @@ namespace CinemaHD.Services
             var expiryMinutes = int.Parse(jwtSettings["ExpiryMinutes"]);
 
             var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim("UserId", user.UserID),
-            new Claim("Role", user.Role?.NameRole ?? "User")
-        };
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("UserId", user.UserID),
+                new Claim("Role", user.Role?.NameRole ?? "Member")
+            };
 
             var token = new JwtSecurityToken(
                 issuer: jwtSettings["Issuer"],

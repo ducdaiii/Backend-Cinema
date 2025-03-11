@@ -1,5 +1,6 @@
 ﻿using CinemaHD.Database;
 using CinemaHD.Models.Domains;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -77,6 +78,7 @@ namespace CinemaHD.Controllers
             return Ok(movies);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("add")]
         public async Task<IActionResult> AddMovie([FromBody] Movies movie)
@@ -95,6 +97,7 @@ namespace CinemaHD.Controllers
             return Ok(new { message = "Movie added successfully.", movieId = movie.MovieID });
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         [Route("update")]
         public async Task<IActionResult> UpdateMovie([FromBody] Movies movie)
@@ -125,6 +128,7 @@ namespace CinemaHD.Controllers
             return Ok("Movie updated successfully.");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         [Route("delete/{movieId}")]
         public async Task<IActionResult> DeleteMovie(string movieId)
